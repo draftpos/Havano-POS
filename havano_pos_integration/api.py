@@ -197,7 +197,9 @@ def get_products():
                 "groupname": detail["item_group"],
                 "maintainstock": detail["is_stock_item"],
                 "warehouses": products[item_code]["warehouses"],
-                "prices": products[item_code]["prices"]
+                "prices": products[item_code]["prices"],
+                "simple_code": products[item_code]["simple_code"]
+
             }
             final_products.append(final_product)
         
